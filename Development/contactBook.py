@@ -3,7 +3,7 @@ import os
 os.chdir('..')
 cwd = os.getcwd()
 print(cwd)
-# Functions
+#%% Functions
 # General Function for Getting the Name of the Record
 def getName(action):
     name = input('Please input the name of the contact you want to {}: '.format(action)).title()
@@ -107,6 +107,7 @@ def delete(name, book):
         print('Invalid input.')
         return book
 
+#%% Main
 if __name__ == '__main__':
     try:
         book = pd.read_csv(cwd + r'Data/contactBook.csv')
